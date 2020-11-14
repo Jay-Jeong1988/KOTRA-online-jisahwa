@@ -4,23 +4,17 @@
             <img src="../assets/kotra_logo.png" alt="KOTRA">
         </div>
         <div class="foot_util">
-                <a href="https://www.kotra.or.kr/foreign/main/KHEMUI010M.html" target="_blank"><p style="margin: 6px 0">Visit KOTRA</p></a>
-            <div class="adr">
+                <a href="https://www.kotra.or.kr/foreign/main/KHEMUI010M.html" target="_blank" >Visit KOTRA</a>
+            <div class="adr" style="margin: 7px 0">
                 <p>
                     780-999 Canada Place, Vancouver, BC, Canada V6C 3E1&nbsp;&nbsp;
-                    <!-- <img src="/images/kbc/goolesmap.gif"
-                    alt="???????" onclick="javascript:goGooles();"
-                    style="cursor: pointer" /> -->
                 </p>
                 <p>
                     TEL :<span> 1-604-683-1820, 687-7322</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     FAX :<span> 1-604-687-6249</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    EMAIL :<span> info@kotrayvr.com  </span>
+                    EMAIL :<span> jay@kotrayvr.com  </span>
                 </p>
             </div>
-            <p class="copyright">
-                Copyright &copy; 2012 <strong>KOTRA</strong> all rights reserved.
-            </p>
         </div>
     </div>
 </template>

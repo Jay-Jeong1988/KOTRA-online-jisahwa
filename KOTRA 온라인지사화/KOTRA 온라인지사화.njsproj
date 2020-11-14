@@ -39,6 +39,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="src\assets\kotra_vancouver_.gif" />
+    <Content Include="src\assets\search.svg" />
     <Content Include="src\assets\user.svg" />
     <Content Include="src\components\Footer.vue">
       <SubType>Code</SubType>

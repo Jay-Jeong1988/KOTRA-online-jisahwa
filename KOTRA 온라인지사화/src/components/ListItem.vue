@@ -43,6 +43,7 @@
         width: 90%;
         height: 300px;
         margin: 30px 0;
+        overflow: hidden;
     }
     @media (max-width: 600px){
         .ListItem {
@@ -60,7 +61,7 @@
     .rightContainer {
         width: 55%;
         padding: 0rem 2rem;
-        overflow: scroll;
+        overflow-y: scroll;
     }
     .description {
         text-overflow: ellipsis;
