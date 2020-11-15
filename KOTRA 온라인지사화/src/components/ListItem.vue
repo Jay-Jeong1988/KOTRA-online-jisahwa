@@ -1,19 +1,23 @@
 <template>
     <div class="ListItem">
-        <div class="leftContainer" :style="{'backgroundImage': 'url(' + this.item.thumbnailUrl + ')' }"></div>
+        <div @click="openPdf" class="leftContainer" :style="{'backgroundImage': 'url(' + this.item.thumbnailUrl + ')' }"></div>
         <div class="rightContainer">
-            <h1 class="title">{{item.product}}</h1>
-            <p class="company"><b>Company:</b> {{item.company}}</p>
-            <button v-if="item.catalogueUrls[0]" class="openPdfBtn" @click="openPdf">More Info</button>
-            <p v-if="item.established"><b>Established Year:</b> {{item.established}}</p>
-            <p><b>HSCode:</b> {{item.hsCode}}</p>
-            <p style="display: inline-block"><b>Category:&nbsp;</b> </p><span v-for="(cat, i) in item.categories" :key="i">{{cat}},&nbsp;</span><br /><br />
-            <a :href="item.website" target="_blank"><b>{{item.website}}</b></a>
+            <h1 @click="openPdf" class="productTitle">{{item.product}}</h1>
+            <div class="productInfo">
+                <p class="company"><b>Company:</b> {{item.company}}</p>
+                <!--<button v-if="item.catalogueUrls[0]" class="openPdfBtn" @click="openPdf">More Info</button>-->
+                <p v-if="item.established"><b>Established Year:</b> {{item.established}}</p>
+                <p><b>HSCode:</b> {{item.hsCode}}</p>
+                <p style="display: inline-block"><b>Category:&nbsp;</b> </p><span v-for="(cat, i) in item.categories" :key="i">{{cat}},&nbsp;</span><br /><br />
+                <a :href="item.website" target="_blank"><b>{{item.website}}</b></a>
+            </div>
         </div>
+        <Dropdown :item="item"></Dropdown>
     </div>
 </template>
 
 <script>
+    import Dropdown from './Dropdown'
     export default {
         name: 'ListItem',
         props: ['item'],
@@ -26,6 +30,9 @@
             openPdf() {
                 this.$emit('openPdf',this.item.catalogueUrls)
             }
+        },
+        components: {
+            Dropdown
         }
     };
 </script>
@@ -40,15 +47,10 @@
         justify-content: space-between;
         border: 1px solid;
         border-radius: 15px;
-        width: 90%;
+        width: 70%;
         height: 300px;
         margin: 30px 0;
         overflow: hidden;
-    }
-    @media (max-width: 600px){
-        .ListItem {
-            
-        }
     }
     .leftContainer {
         width: 45%;
@@ -57,6 +59,7 @@
         background-repeat: no-repeat;
         border-radius: 15px 0 0 15px;
         background-position: center;
+        cursor: pointer;
     }
     .rightContainer {
         width: 55%;
@@ -74,5 +77,40 @@
         position: absolute;
         left: 65%;
         font-size: 1.4rem;
+    }
+    .productTitle {
+        cursor: pointer;
+    }
+    .productTitle:hover {
+        color: #007fff;
+        text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+        .ListItem {
+            display: block;
+            border: 1px solid;
+            width: 85%;
+            height: 240px;
+            margin: 30px 0;
+            overflow: initial;
+            border-radius: 0;
+        }
+        .leftContainer {
+            width: 100%;
+            height: 70%;
+            border-radius: 0;
+        }
+        .rightContainer {
+            width: unset;
+            overflow-y: initial;
+            padding: 0rem 1rem;
+            padding-right: 2rem;
+        }
+        .rightContainer h1 {
+            font-size: 1.3rem;
+        }
+        .productInfo {
+            display: none;
+        }
     }
 </style>

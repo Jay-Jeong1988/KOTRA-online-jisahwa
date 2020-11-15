@@ -22,18 +22,18 @@
             </div>
             <!--<div class="closeBtn" @click="$modal.hide('profile')">&#10005;</div>-->
         </modal>
-        <div>
+        <div class="businessInfo">
             <h2 style="font-size: 1.7rem; margin-bottom: 0;">Overseas Branching Project</h2>
             <p style="margin-bottom: 0; font-size: 1.3rem;"><b>Business purpose</b></p>
-            <p style="font-size: 1.2rem;">&#x25cb; Supporting export and overseas expansion by playing a role as a local branch for small and medium-sized Korean companies that lack the ability to set up branch offices abroad</p>
+            <p style="font-size: 1.2rem; margin-top: 5px;">&#x25cb; Supporting export and overseas expansion by playing a role as a local branch for small and medium-sized Korean companies that lack the ability to set up branch offices abroad</p>
         </div>
         <div class="main_image">
             <img style="width: 100%" src="../assets/kotra_vancouver_.gif" alt="kotra vancouver" />
         </div>
-        <h1 style="margin-top: 0; text-align:center; font-size: 2.7rem; border:2px solid; background: linear-gradient(#3b8fed, #053f95); color: #fff; padding: 5px 0;">{{title}}</h1>
+        <h1 class="title" style="margin-top: 0; text-align:center; font-size: 2.7rem; border:2px solid; background: linear-gradient(#3b8fed, #053f95); color: #fff; padding: 5px 0;">{{title}}</h1>
         <div class="categorySelection">
             <button v-for="(item, index) in allCategories" :key="index" class="cBtn" @click="btnSelect" :style="styleObject(item.color)">{{item.name}}</button>
-            <div style="width: 22%; margin: 5px;"></div>
+            <button style="visibility: hidden;" class="cBtn"></button>
         </div>
         <div class="okayBtn" :class="{ active: !!selectedCategories[0] }" @click="confirm">Search
             <img style="margin: auto; width: 1.3rem" src="../assets/search.svg" />
@@ -85,6 +85,7 @@
 <script>
     import ListItem from "./ListItem";
     import pdf from 'vue-pdf'
+    
 
     export default {
         name: 'Home',
@@ -280,6 +281,9 @@
         background-color: var(--backgroundColor-hover);
         color: var(--color-hover);
     }
+    .listContainer {
+        min-height: 30vh;
+    }
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     .okayBtn {
         width: 18.5%;
@@ -390,6 +394,43 @@
     }
     option {
         color: #000;
+    }
+
+    /*responsive*/
+    @media (max-width: 600px){
+        .home {
+            padding: 0;
+            width: 94%;
+        }
+        .logo {
+            width: 150px;
+            height: 110px;
+        }
+        .profileBtnContainer {
+            width: 28px !important;
+        }
+        .profileBtnContainer > p {
+            font-size: 0.9rem !important;
+        }
+        .businessInfo > h2 {
+            font-size: 1.4rem !important;
+        }
+        .businessInfo > p {
+            font-size: 1.1rem !important;
+        }
+        .title {
+            font-size: 1.6rem !important;
+            padding: 10px !important;
+        }
+        .cBtn {
+            width: 30%;
+            padding: 10px 5px;
+            font-size: 1rem;
+        }
+        .okayBtn {
+            width: 30%;
+            font-size: 1.4rem;
+        }
     }
 </style>
 

@@ -10,9 +10,9 @@
                     780-999 Canada Place, Vancouver, BC, Canada V6C 3E1&nbsp;&nbsp;
                 </p>
                 <p>
-                    TEL :<span> 1-604-683-1820, 687-7322</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    FAX :<span> 1-604-687-6249</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    EMAIL :<span> jay@kotrayvr.com  </span>
+                    <span>TEL : 1-604-683-1820, 687-7322</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>FAX : 1-604-687-6249</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>EMAIL : jay@kotrayvr.com  </span>
                 </p>
             </div>
         </div>
@@ -40,7 +40,7 @@
         padding: 4rem;
         padding-top: 2rem;
         width: 70%;
-        border-top: 2px solid #ccc;
+        border-top: 1px solid #ccc;
         box-shadow: 0 -1px 1px #ddd;
     }
     #footer .foot_logo {
@@ -76,9 +76,13 @@
         margin: 0;
         padding: 0;
     }
-    #footer .foot_util .copyright {
-        color: #aaa;
-        margin-top: 7px;
-        font-family: tahoma;
+    @media (max-width: 600px){
+        #footer {
+            padding: 2rem;
+            width: 90%;
+        }
+        .adr span {
+            display: block;
+        }
     }
 </style>
