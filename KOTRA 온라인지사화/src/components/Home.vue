@@ -54,7 +54,7 @@
         <modal name="moreInfo" width="70%" @closed="closeEventTriggered" height="100%" :shiftY="parseInt(0)" :shiftX="parseInt(0)" styles="margin: auto; overflow: hidden; box-shadow: unset; align-items: center; display: flex; flex-direction: column; background-color: transparent;">
             <div style="width: 100%; height: 100%;">
                 <div class="pdfTools">
-                    <div id="catalogueSelectorContainer" style="transform: translate(20vw, 40vh) scale(1.5); transition: transform 1s ease-out;">
+                    <div id="catalogueSelectorContainer">
                         <select class="catalogueSelector" @change="onCatalogueChange">
                             <option value="" disabled selected>Select a catalogue...</option>
                             <option v-for="(item, index) in pdfInfo.catalogueUrls" :value="item" :key="index" v-text="item.split('kotra/')[1]"></option>
@@ -151,10 +151,12 @@
                 document.getElementsByTagName("body")[0].style.overflow = "unset"
             },
             prevPage() {
-                if(this.pdfInfo.page > 1) this.pdfInfo.page--
+                if (this.pdfInfo.page > 1) this.pdfInfo.page--
+                document.querySelector(".pdfContainer").scrollTop = 0;
             },
             nextPage() {
-                if(this.pdfInfo.page < this.pdfInfo.numPages) this.pdfInfo.page++
+                if (this.pdfInfo.page < this.pdfInfo.numPages) this.pdfInfo.page++
+                document.querySelector(".pdfContainer").scrollTop = 0;
             },
             openPdf(catalogueUrls) {
                 this.pdfInfo.catalogueUrls = catalogueUrls
@@ -335,6 +337,10 @@
         background-color: #cdfcf9;
         color: #fff;
     }
+    #catalogueSelectorContainer {
+        transform: translate(20vw, 40vh) scale(1.5); 
+        transition: transform 1s ease-out;
+    }
 
     .pdfTools {
         width: 70%;
@@ -447,12 +453,18 @@
         .vm--modal {
             width: 100% !important;
         }
-        .controller > input, .controller > h4 {
-            color: #000 !important;
+        .controller > input {
             background-color: #fff !important;
+            color: #000 !important;
+        }
+        .controller > h4 {
+            text-shadow: 2px 1px 0 #fff;
+            color: #000 !important;
+            background-color: transparent !important;
         }
         #catalogueSelectorContainer {
-            transform: translate(20vw, 40vh) scale(1.3) !important;
+            transform: translate(20vw, 40vh) scale(1.3);
+            transition: transform 1s ease-out;
         }
     }
 </style>
