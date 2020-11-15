@@ -13,14 +13,15 @@
                 </div>
             </div>
         </div>
-        <modal name="profile" width="210px" height="auto" :shiftX="parseInt(1)" :shiftY="parseInt(0.3)" styles="padding: 1rem 0; justify-content: space-around; align-items: center; display: flex; flex-direction: column; background-color: #fff;">
+        <modal name="profile" width="28%" height="auto" :shiftX="parseFloat(0.7)" :shiftY="parseFloat(0.3)" styles="padding: 2rem 1rem; justify-content: space-around; align-items: center; display: flex; background-color: #fff;">
+            <div class="logo" />
             <div>
                 <p style="text-align: center; margin: 0;">Jay Jeong</p>
                 <p style="text-align: center; margin: 0; color: #aaa; font-size: 0.9rem;">Project Assistant</p>
                 <a href="mailto:jay@kotrayvr.com" target="_blank"><p style="text-align: center;">jay@kotrayvr.com</p></a>
                 <a href="tel:+17782220766" target="_blank"><p style="text-align: center;">778-222-0766</p></a>
             </div>
-            <!--<div class="closeBtn" @click="$modal.hide('profile')">&#10005;</div>-->
+            <div class="closeBtn" @click="$modal.hide('profile')">&#10005;</div>
         </modal>
         <div class="businessInfo">
             <h2 style="font-size: 1.7rem; margin-bottom: 0;">Overseas Branching Project</h2>
@@ -377,6 +378,8 @@
         border-radius: 5px;
         background-color: #fff;
         padding: 5px 10px;
+        align-self: flex-end;
+        margin-left: 1rem;
     }
 
     .pdfContainer {
@@ -452,6 +455,8 @@
         }
         .vm--modal {
             width: 100% !important;
+            left: 0 !important;
+            top: 0 !important;
         }
         .controller > input {
             background-color: #fff !important;
