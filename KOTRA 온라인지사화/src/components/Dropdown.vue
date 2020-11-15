@@ -123,7 +123,7 @@
         border-top: 1px solid var(--color-gray);
     }
     #dropdown {
-        transform: translateY(-41px);
+        /*transform: translateY(-41px);*/
     }
 
     @media(min-width: 601px) {
@@ -143,7 +143,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-bottom: 0;
+        margin: 0;
     }
 
     .header__item {

@@ -3,6 +3,7 @@
         <div @click="openPdf" class="leftContainer" :style="{'backgroundImage': 'url(' + this.item.thumbnailUrl + ')' }"></div>
         <div class="rightContainer">
             <h1 @click="openPdf" class="productTitle">{{item.product}}</h1>
+            <Dropdown :item="item"></Dropdown>
             <div class="productInfo">
                 <p class="company"><b>Company:</b> {{item.company}}</p>
                 <!--<button v-if="item.catalogueUrls[0]" class="openPdfBtn" @click="openPdf">More Info</button>-->
@@ -12,7 +13,6 @@
                 <a :href="item.website" target="_blank"><b>{{item.website}}</b></a>
             </div>
         </div>
-        <Dropdown :item="item"></Dropdown>
     </div>
 </template>
 
@@ -103,14 +103,16 @@
         .rightContainer {
             width: unset;
             overflow-y: initial;
-            padding: 0rem 1rem;
-            padding-right: 2rem;
-        }
-        .rightContainer h1 {
-            font-size: 1.3rem;
+            padding: 0;
         }
         .productInfo {
             display: none;
+        }
+        .productTitle {
+            width: 100%;
+            padding: 0 0.5rem;
+            margin-bottom: 0;
+            font-size: 1.3rem;
         }
     }
 </style>

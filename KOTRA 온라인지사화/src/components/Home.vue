@@ -431,6 +431,29 @@
             width: 30%;
             font-size: 1.4rem;
         }
+        .catalogueSelector {
+            width: 13.5rem;
+        }
+        .downloadLink {
+            width: 30px;
+        }
+        .pdfTools {
+            width: 100%;
+        }
+        .controller {
+            position: absolute;
+            top: 86vh;
+        }
+        .vm--modal {
+            width: 100% !important;
+        }
+        .controller > input, .controller > h4 {
+            color: #000 !important;
+            background-color: #fff !important;
+        }
+        #catalogueSelectorContainer {
+            transform: translate(20vw, 40vh) scale(1.3) !important;
+        }
     }
 </style>
 
