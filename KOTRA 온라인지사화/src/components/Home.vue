@@ -40,6 +40,7 @@
             <img style="margin: auto; width: 1.3rem" src="../assets/search.svg" />
         </div>
         <p style="text-align: center; margin-bottom: 0;">Found {{listItems.length}} items</p>
+        <p style="text-align: center; color: red;">*Click a product image or title to see the catalogue.</p>
         <div class="listContainer">
             <div class="category">
                 <ListItem v-for="item in listItems" :key="item.uid" :item="item" @openPdf="openPdf"></ListItem>
@@ -107,7 +108,7 @@
                 allCategories: [
                     { name: "Home", color: "#093145" },
                     { name: "Technology", color: "#107896" },
-                    { name: "Industrial", color: "#2478DD" },
+                    { name: "Industry", color: "#2478DD" },
                     { name: "Food", color: "#829356" },
                     { name: "Construction", color: "#AD2A1A" },
                     { name: "Cosmetic", color: "#C2571A" },
@@ -121,9 +122,14 @@
         },
         mounted() {
             //this.$modal.show('category selection')
-            this.pdfInfo.src.promise.then(pdf => {
-                this.pdfInfo.numPages = pdf.numPages;
-            });
+            //this.pdfInfo.src.promise.then(pdf => {
+            //    this.pdfInfo.numPages = pdf.numPages;
+            //});
+            window.onhashchange = () => {
+                if (!window.location.hash) {
+                    this.$modal.hide('moreInfo')
+                }
+            }
         },
         methods: {
             onCatalogueChange(event) {
@@ -150,6 +156,9 @@
                     src: ""
                 }
                 document.getElementsByTagName("body")[0].style.overflow = "unset"
+                if (window.location.hash) {
+                    window.location.hash = ''
+                }
             },
             prevPage() {
                 if (this.pdfInfo.page > 1) this.pdfInfo.page--
@@ -164,6 +173,7 @@
                 this.pdfInfo.show = true
                 this.$modal.show('moreInfo')
                 document.getElementsByTagName("body")[0].style.overflow = "hidden"
+                window.location.hash += "pdfWindow"
             },
             error: function (err) {
 

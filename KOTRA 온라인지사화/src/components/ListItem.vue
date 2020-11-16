@@ -61,6 +61,10 @@
         background-position: center;
         cursor: pointer;
     }
+    .leftContainer:hover {
+        border: 3px solid #3688e5;
+        border-style: dashed;
+    }
     .rightContainer {
         width: 55%;
         padding: 0rem 2rem;
