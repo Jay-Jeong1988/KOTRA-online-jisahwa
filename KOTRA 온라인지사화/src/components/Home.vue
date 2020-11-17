@@ -130,6 +130,7 @@
                     this.$modal.hide('moreInfo')
                 }
             }
+
         },
         methods: {
             onCatalogueChange(event) {
