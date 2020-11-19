@@ -649,7 +649,7 @@
     "website": "http://www.themadekorea.com"
   },
   { "uid": 47,
-    "company": "V World",
+    "company": "Venture World",
     "established": "",
     "ceo": "Choi, Yang Bae",
     "product": "Attachable Bag",
@@ -657,7 +657,7 @@
     "categories": ["Clothing"],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/vworld/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [], 
+    "catalogueUrls": ["https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/vworld/Base+belt+catalogue.pdf"], 
     "hsCode": "420219",
     "website": "http://www.novac.co.kr"
   },
