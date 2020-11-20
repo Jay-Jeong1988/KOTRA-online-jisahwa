@@ -8,7 +8,7 @@
                 <p class="company"><b>Company:</b> {{item.company}}</p>
                 <!--<button v-if="item.catalogueUrls[0]" class="openPdfBtn" @click="openPdf">More Info</button>-->
                 <p v-if="item.established"><b>Established Year:</b> {{item.established}}</p>
-                <p><b>HSCode:</b> {{item.hsCode}}</p>
+                <p v-if="item.hsCode"><b>HSCode:</b> {{item.hsCode}}</p>
                 <p style="display: inline-block"><b>Category:&nbsp;</b> </p><span v-for="(cat, i) in item.categories" :key="i">{{cat}},&nbsp;</span><br /><br />
                 <a :href="item.website" target="_blank"><b>{{item.website}}</b></a>
             </div>
