@@ -1,7 +1,7 @@
 <template>
     <div id="footer">
         <div class="foot_logo">
-            <img src="../assets/kotra_logo.png" alt="KOTRA">
+            <a href="/"><img src="../assets/kotra_logo.png" alt="KOTRA"></a>
         </div>
         <div class="foot_util">
                 <a href="https://www.kotra.or.kr/foreign/main/KHEMUI010M.html" target="_blank" >Visit KOTRA</a>

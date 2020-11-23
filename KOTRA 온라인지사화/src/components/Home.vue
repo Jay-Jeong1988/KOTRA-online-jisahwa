@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="navbar">
-            <div class="logo" />
+            <a href="/"><div class="logo" /></a>
             <div style="display: flex; justify-content: space-around; align-items: center;">
                 <div class="profileBtnContainer" @click="openProfile">
                     <img style="width: 100%" src="../assets/user.svg" alt="user" />
@@ -160,7 +160,7 @@
                         const pageBottom = scrollingContainer.scrollHeight
                         const scrollBottom = scrollingContainer.clientHeight + scrollingContainer.scrollTop
                         
-                        if (self.pdfInfo.page < pdf.numPages && scrollBottom >= pageBottom && detectMouseWheelDirection() == "down") {
+                        if (self.pdfInfo.page < pdf.numPages && scrollBottom >= pageBottom -1 && detectMouseWheelDirection() == "down") {
                             self.pdfInfo.page++
                             scrollingContainer.scrollTop = 0
                         } else if (self.pdfInfo.page > 1 && scrollingContainer.scrollTop <= 0 && detectMouseWheelDirection() == "up") {
