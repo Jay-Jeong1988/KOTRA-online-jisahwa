@@ -223,7 +223,7 @@
 
     .slide-fade-enter-active,
     .slide-fade-leave-active {
-        transition: all 0.6s;
+        transition: all 0.3s;
     }
 
     .slide-fade-enter,
@@ -241,7 +241,7 @@
 
     .dropdown-enter-active,
     .dropdown-leave-active {
-        transition: all 1s;
+        transition: all 0.1s;
     }
 
     .dropdown-enter,

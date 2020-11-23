@@ -28,7 +28,7 @@
         },
         methods: {
             openPdf() {
-                this.$emit('openPdf',this.item.catalogueUrls)
+                this.$emit('openPdf',this.item)
             }
         },
         components: {

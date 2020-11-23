@@ -6,10 +6,10 @@
     "ceo": "LEE, SU HA",
     "product": "Road Marking Paint",
     "productDescription": "AcroRoute® RM-650 Series is a room temperature curing type plastic paint designed and manufactured in accordance with KS M 6080 - 5 Specification.It is a solvent-free type environment-friendly road marking paint cured by radical reaction by liquid or powder curing agent.The center line of the road, the road boundary line, the outer side line, the overtaking line, the road lane, etc.",
-    "categories": [ "Industry" ],
+    "categories": [ "Hardware" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/usechem/doro2.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/usechem/UseChem_compressed.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/usechem/Introduction.pdf" ],
     "hsCode": "390690",
     "website": "http://www.usechem.co.kr"
   },
@@ -20,10 +20,10 @@
     "ceo": "KIM, CHANG DEUK",
     "product": "Hydraulic Rubber Hoses",
     "productDescription": "",
-    "categories": [ "Industry" ],
+    "categories": [ "Hardware" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/sentec/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/sentec/SENTEC+Catalogue.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/sentec/Introduction.pdf" ],
     "hsCode": "400921",
     "website": "http://isentec.co.kr"
   },
@@ -51,7 +51,7 @@
     "categories": [ "Home", "Pet" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/bnsoft/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/bnsoft/ultrawave_BNSoft.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/bnsoft/Introduction.pdf" ],
     "hsCode": "854370",
     "website": "http://www.ultrawave.co.kr"
   },
@@ -65,7 +65,7 @@
     "categories": [ "Home" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/boro/1.jpeg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/boro/brochure+use+fun+rubber+gloves(eg)+ug101+ug201+2.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/boro/Introduction.pdf" ],
     "hsCode": "401519",
     "website": "http://www.boro.co.kr"
   },
@@ -79,7 +79,7 @@
     "categories": [ "Clothing", "Eco-friendly" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/corkandCork/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/corkandCork/COPI.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/corkandCork/Introduction.pdf" ],
     "hsCode": "405409",
     "website": "http://www.copi.co.kr"
   },
@@ -93,7 +93,7 @@
     "categories": [ "Home", "Technology" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/hyundaiAIT/1.png",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/hyundaiAIT/200825_AIT_8p_v2.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/hyundaiAIT/Introduction.pdf" ],
     "hsCode": "853710",
     "website": "http://www.hdait.co.kr"
   },
@@ -107,7 +107,7 @@
     "categories": [ "Cosmetic", "Home" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/foreverJ/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/foreverJ/ForeverJ.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/foreverJ/Introduction.pdf" ],
     "hsCode": "670411",
     "website": "https://smartstore.naver.com/foreverj"
   },
@@ -118,12 +118,12 @@
     "ceo": "Lee, Ki Soung",
     "product": "Motor for Automatic Doors",
     "productDescription": "",
-    "categories": [ "Industry", "Construction" ],
+    "categories": [ "Hardware", "Construction" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/kotra/ssa/1.jpg",
     "productImageUrls": [],
     "catalogueUrls": [
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/ssa/(A)Catalog+(Auto-door+Parts)-EN_V200603.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/ssa/SSA_En_200622.pdf"
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/ssa/Auto-door_Parts.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/ssa/Introduction.pdf"
     ],
     "hsCode": "850110",
     "website": "http://www.ssamotor.co.kr"
@@ -135,10 +135,10 @@
     "ceo": "Kim, Seong Ahn",
     "product": "Heating Cable",
     "productDescription": "",
-    "categories": [ "Industry", "Construction" ],
+    "categories": [ "Hardware", "Construction" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/woosinenc/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/woosinenc/WoosinENC-Heating+Cable_compressed.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/woosinenc/Introduction.pdf" ],
     "hsCode": "851680",
     "website": "http://www.woosinenc.com"
   },
@@ -170,10 +170,10 @@
     "ceo": "Yoon, Ji Soon",
     "product": "PVC Adhesives",
     "productDescription": "",
-    "categories": [ "Industry", "Eco-friendly" ],
+    "categories": [ "Hardware", "Eco-friendly" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/ecochemtech/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/ecochemtech/EcoChemtech_compressed.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/ecochemtech/Introduction.pdf" ],
     "hsCode": "350691",
     "website": "http://www.ecochemtech.co.kr"
   },
@@ -184,10 +184,10 @@
     "ceo": "Lee, Jong Woo",
     "product": "Automated Parking Guidance System",
     "productDescription": "",
-    "categories": [ "Industry", "Technology" ],
+    "categories": [ "Hardware", "Technology" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/tis/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/tis/Introduction+to+TIS+%26+APGS+(October+2020)+ver.8.2.+NA.PDF" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/tis/Introduction.pdf" ],
     "hsCode": "",
     "website": "http://www.tis21.com"
   },
@@ -196,16 +196,16 @@
     "company": "Koreel",
     "established": "1991",
     "ceo": "Oh, Hyun Kyu",
-    "product": "Industry Hose and Cable Reels",
+    "product": "Hardware Hose and Cable Reels",
     "productDescription": "",
-    "categories": [ "Industry", "Construction" ],
+    "categories": [ "Hardware", "Construction" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/koreel/1.jpg",
     "productImageUrls": [],
     "catalogueUrls": [
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Standard+Products+of+Koreel_compressed.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Mobile+crane+and+special+purpose+vehicles---20150429+.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Customized+Reel+Products+of+Koreel_compressed.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Company+Profile_20200213_compressed.pdf"
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Standard_Products_of_Koreel.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Mobile_crane_and_special_purpose_vehicles.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Customized_Reel_Products.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/koreel/Company_Profile.pdf"
     ],
     "hsCode": "847989",
     "website": "http://www.koreel.com"
@@ -220,7 +220,7 @@
     "categories": [ "Food", "Natural" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/chosanjung/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/chosanjung/Chosanjung_English.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/chosanjung/Introduction.pdf" ],
     "hsCode": "220900",
     "website": "http://www.chosanjung.com"
   },
@@ -231,10 +231,10 @@
     "ceo": "Kang, Dal Ho",
     "product": "Automotive Lubricants",
     "productDescription": "",
-    "categories": [ "Industry" ],
+    "categories": [ "Hardware" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/hyundaioilbank/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/hyundaioilbank/Hyundai+Oil+Bank_EN_compressed.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/hyundaioilbank/Introduction.pdf" ],
     "hsCode": "901890",
     "website": "http://www.hyundaicorp.com"
   },
@@ -262,7 +262,7 @@
     "categories": [ "Food", "Natural" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/herbstory/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/herbstory/Herb+Story-English+Catalog.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/herbstory/Introduction.pdf" ],
     "hsCode": "340111",
     "website": "http://www.iherbstory.kr"
   },
@@ -278,8 +278,8 @@
     "productImageUrls": [],
     "catalogueUrls": [
       "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/combase/Combase.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/combase/Disposal+Bin+Catalogue.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/combase/combase+Japanese+Catalogue.pdf"
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/combase/Disposal_Bin.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/combase/combase_Japanese_Catalogue.pdf"
     ],
     "hsCode": "950590",
     "website": "http://www.combase.biz"
@@ -309,10 +309,10 @@
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/abledesign/1.jpg",
     "productImageUrls": [],
     "catalogueUrls": [
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Wearingeul_compressed.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Venho.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Synav_The+On.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Synav_Han+Jan.pdf"
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Wearingeul_Product.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Venho_Product.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Synav_Product.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/abledesign/Synav_Product2.pdf"
     ],
     "hsCode": "482010",
     "website": "https://www.wearingeulstudio.com"
@@ -324,10 +324,10 @@
     "ceo": "Ahn, Kong Hun & Yang, Inseok",
     "product": "Lighting Applications",
     "productDescription": "",
-    "categories": [ "Industry", "Construction" ],
+    "categories": [ "Hardware", "Construction" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/glowone/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/glowone/Glow+One.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/glowone/Introduction.pdf" ],
     "hsCode": "940510",
     "website": "http://www.glowone.co.kr"
   },
@@ -342,12 +342,12 @@
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/phoenixmeditec/1.jpg",
     "productImageUrls": [],
     "catalogueUrls": [
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/FDA.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/Inhalation+and+Exhalation+Resistance_tetcompany.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/KF94+Test+Record.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/Letter+of+Reference.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/pouch.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/Pureblue_Manufacturer.pdf"
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/FDA_Certification.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/Inhalation_and_Exhalation_Resistance_Record.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/KF94_Test_Record.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/Letter_of_Reference.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/Packaging_Design.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/phoenixmeditec/Pureblue_Mask.pdf"
     ],
     "hsCode": "940510",
     "website": "http://phoenixmeditec.com"
@@ -376,7 +376,7 @@
     "categories": [ "Cosmetic", "Home" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/jccosmetic/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/jccosmetic/JCCosmetic.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/jccosmetic/Introduction.pdf" ],
     "hsCode": "960330",
     "website": "http://jccosmetic.co.kr"
   },
@@ -387,10 +387,10 @@
     "ceo": "Kim, Ki Tae",
     "product": "Adhesive Tapes",
     "productDescription": "",
-    "categories": [ "Industry", "Home", "Stationery" ],
+    "categories": [ "Hardware", "Home", "Stationery" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/kbadhesives/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/kbadhesives/KBAdhesives_compressed.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/kbadhesives/Introduction.pdf" ],
     "hsCode": "391910",
     "website": "http://kbadhesives.com"
   },
@@ -404,7 +404,7 @@
     "categories": [ "Home", "Clothing" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/meoktong/1.png",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/meoktong/Meoktong.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/meoktong/Introduction.pdf" ],
     "hsCode": "732690",
     "website": "http://www.meoktong.co.kr"
   },
@@ -418,7 +418,7 @@
     "categories": [ "Clothing" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/asiha/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/asiha/asiha.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/asiha/Introduction.pdf" ],
     "hsCode": "620293",
     "website": "http://www.asiha.co.kr"
   },
@@ -432,7 +432,7 @@
     "categories": [ "Food", "Natural" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/addiglobal/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/addiglobal/addiglobal.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/addiglobal/Introduction.pdf" ],
     "hsCode": "170490",
     "website": "http://www.addiglobal.com"
   },
@@ -443,10 +443,10 @@
     "ceo": "Kim, Myong Woon",
     "product": "Solar Color Glass for BIPV",
     "productDescription": "",
-    "categories": [ "Industry", "Construction", "Eco-friendly" ],
+    "categories": [ "Hardware", "Construction", "Eco-friendly" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/dnf/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/dnf/dnf.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/dnf/Introduction.pdf" ],
     "hsCode": "700521",
     "website": "http://www.dnfsolution.com"
   },
@@ -460,7 +460,7 @@
     "categories": [ "Food" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/kidari/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/kidari/say+noodle.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/kidari/Introduction.pdf" ],
     "hsCode": "190230",
     "website": "http://www.kidarifoods.co.kr"
   },
@@ -474,7 +474,7 @@
     "categories": [ "Technology", "Home", "Stationery" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/appmedia/1.png",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/appmedia/appmedia.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/appmedia/Introduction.pdf" ],
     "hsCode": "854370",
     "website": "http://www.appmedia.co.kr"
   },
@@ -488,7 +488,7 @@
     "categories": [ "Home" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/clpharm/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/clpharm/clpharm.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/clpharm/Introduction.pdf" ],
     "hsCode": "300490",
     "website": "http://www.clpharm.com"
   },
@@ -502,7 +502,7 @@
     "categories": [ "Natural", "Food" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/haein/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/haein/haein.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/haein/Introduction.pdf" ],
     "hsCode": "210690",
     "website": "haeinn.co.kr"
   },
@@ -516,7 +516,7 @@
     "categories": [ "PPE" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/comatechnology/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/comatechnology/comatech.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/comatechnology/Introduction.pdf" ],
     "hsCode": "300590",
     "website": "http://www.comatechnology.com"
   },
@@ -527,10 +527,10 @@
     "ceo": "Woo, Youn Pil",
     "product": "Flange",
     "productDescription": "",
-    "categories": [ "Industry", "Construction" ],
+    "categories": [ "Hardware", "Construction" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/kpctech/1.png",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/kpctech/kpc.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/kpctech/Introduction.pdf" ],
     "hsCode": "730721",
     "website": "http://www.kpctech.com"
   },
@@ -558,7 +558,7 @@
     "categories": [ "Food", "Natural" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/badaone/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/badaone/badaone.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/badaone/Introduction.pdf" ],
     "hsCode": "210690",
     "website": "http://www.badaone.com"
   },
@@ -589,7 +589,7 @@
     "categories": [ "Home", "Technology" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/dailycha/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/dailycha/dailyCha.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/dailycha/Introduction.pdf" ],
     "hsCode": "",
     "website": "http://www.marketcha-e.com"
   },
@@ -600,10 +600,10 @@
     "ceo": "Kim, Jin Yeong",
     "product": "Waterproof Seats",
     "productDescription": "",
-    "categories": [ "Industry", "Construction", "Technology" ],
+    "categories": [ "Hardware", "Construction", "Technology" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/kotra/jmenc/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/jmenc/Introduction.pdf" ],
     "hsCode": "390130",
     "website": "http://www.jmenc.co.kr"
   },
@@ -617,7 +617,7 @@
     "categories": [ "PPE" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/onk/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/onk/o%26k.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/onk/Introduction.pdf" ],
     "hsCode": "630790",
     "website": "http://taejeongroup.com"
   },
@@ -631,7 +631,7 @@
     "categories": [ "Home" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/hbf/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/hbf/HBF%2Btrading.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/hbf/Introduction.pdf" ],
     "hsCode": "382490",
     "website": ""
   },
@@ -645,7 +645,7 @@
     "categories": [ "Technology", "Home" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/bareun/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/bareun/momstem.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/bareun/Introduction.pdf" ],
     "hsCode": "854370",
     "website": "http://momstem.com"
   },
@@ -657,9 +657,9 @@
     "product": "Cosmetics & Nutritions",
     "productDescription": "",
     "categories": [ "Cosmetic" ],
-    "thumbnailUrl": "",
+    "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/crowncos/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/crowncos/crowncos.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/crowncos/Introduction.pdf" ],
     "hsCode": "330499",
     "website": "https://www.instagram.com/crowncos/"
   },
@@ -673,7 +673,7 @@
     "categories": [ "Home", "Technology" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/sunsafes/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/sunsafes/sunsafes.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/sunsafes/Introduction.pdf" ],
     "hsCode": "830300",
     "website": "http://www.eaglesafes.com"
   },
@@ -685,7 +685,7 @@
     "product": "Air Refreshners",
     "productDescription": "",
     "categories": [ "Home" ],
-    "thumbnailUrl": "",
+    "thumbnailUrl": "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/themade/1.jpg",
     "productImageUrls": [],
     "catalogueUrls": [],
     "hsCode": "330790",
@@ -701,7 +701,7 @@
     "categories": [ "Clothing" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/vworld/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/vworld/Base+belt+catalogue.pdf" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/vworld/Introduction.pdf" ],
     "hsCode": "420219",
     "website": "http://www.novac.co.kr"
   },
@@ -747,7 +747,7 @@
     "ceo": "Jeon, Jae Hwan",
     "product": "Tools",
     "productDescription": "",
-    "categories": [ "Industry", "Construction" ],
+    "categories": [ "Hardware", "Construction" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/traum/1.jpg",
     "productImageUrls": [],
     "catalogueUrls": [],
@@ -764,7 +764,7 @@
     "categories": [ "Technology", "Home" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/dazone/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/dazone/dazonTech.PDF" ],
+    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/dazone/Introduction.pdf" ],
     "hsCode": "854370",
     "website": "http://www.dazonetech.com"
   },
@@ -776,11 +776,11 @@
     "product": "Clean Top Face Masks",
     "productDescription": "",
     "categories": [ "PPE" ],
-    "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/evergreen/1.jpg",
+    "thumbnailUrl": "",
     "productImageUrls": [],
     "catalogueUrls": [
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/evergreen/ENG_Evergreen_cleantop+mask.pdf",
-      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/evergreen/KOR_Evergreen_cleantop+mask.pdf"
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/evergreen/ENG_cleantop_mask.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/evergreen/KOR_cleantop_mask.pdf"
     ],
     "hsCode": "",
     "website": "http://www.cleantopmask.com"

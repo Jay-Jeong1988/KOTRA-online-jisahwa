@@ -3,10 +3,6 @@
         <div class="navbar">
             <div class="logo" />
             <div style="display: flex; justify-content: space-around; align-items: center;">
-                <!--<div class="categoryBtnContainer" @click="openCatalogueSelection">
-                    <img style="width: 100%" src="../assets/category.svg" alt="categories" />
-                    <p style="font-size: 1.2rem; margin: 0; color: #555;">Category</p>
-                </div>-->
                 <div class="profileBtnContainer" @click="openProfile">
                     <img style="width: 100%" src="../assets/user.svg" alt="user" />
                     <p style="font-size: 1.2rem; margin: 0; color: #555;">Contact</p>
@@ -36,49 +32,63 @@
             <button v-for="(item, index) in allCategories" :key="index" class="cBtn" @click="btnSelect" :style="styleObject(item.color)">{{item.name}}</button>
             <button style="visibility: hidden;" class="cBtn"></button>
         </div>
-        <div class="okayBtn" :class="{ active: !!selectedCategories[0] }" @click="confirm">Search
-            <img style="margin: auto; width: 1.3rem" src="../assets/search.svg" />
-        </div>
-        <p style="text-align: center; margin-bottom: 0;">Found {{listItems.length}} items</p>
-        <p style="text-align: center; color: red;">*Click a product image or title to see the catalogue.</p>
+        <h3 style="text-align: center; margin-bottom: 0;">Found <span style="color: red;">{{listItems.length}}</span> items</h3>
+        <h3 style="text-align: center; color: red;">*Click a product image or title to see the product catalogue.</h3>
         <div class="listContainer">
             <div class="category">
                 <ListItem v-for="item in listItems" :key="item.uid" :item="item" @openPdf="openPdf"></ListItem>
             </div>
         </div>
-        <!--<modal name="category selection" :clickToClose="false" width="70%" :shiftX="0" styles="margin: auto; overflow: unset; box-shadow: unset; align-items: center; display: flex; flex-direction: column; background-color: transparent;">
-            <h1 style="text-align: center; color: #fff;">Please select one or more categories that you are interested in.</h1>
-            <div class="categorySelection">
-                <button v-for="(item, index) in allCategories" :key="index" class="cBtn" @click="btnSelect" :style="styleObject(item.color)">{{item.name}}</button>
-            </div>
-            <div class="okayBtn" @click="confirm">Okay</div>
-        </modal>-->
         <modal name="moreInfo" width="70%" @closed="closeEventTriggered" height="100%" :shiftY="parseInt(0)" :shiftX="parseInt(0)" styles="margin: auto; overflow: hidden; box-shadow: unset; align-items: center; display: flex; flex-direction: column; background-color: transparent;">
-            <div style="width: 100%; height: 100%;">
+            <div style="width: 100%; height: 100%; overflow-y: scroll;" id="scrollingElement">
                 <div class="pdfTools">
-                    <div id="catalogueSelectorContainer">
+                    <div v-show="isPdfSelected" id="catalogueSelectorContainer">
                         <select class="catalogueSelector" @change="onCatalogueChange">
                             <option value="" disabled selected>Select a catalogue...</option>
-                            <option v-for="(item, index) in pdfInfo.catalogueUrls" :value="item" :key="index" v-text="item.split('kotra/')[1]"></option>
+                            <option v-for="(item, index) in pdfInfo.catalogueUrls" :value="item" :key="index" v-text="item.split('kotra/')[1].split('/')[1]"></option>
                         </select>
-                        <h2 v-if="!pdfInfo.isPdfSelected" style="position: absolute; top: 35px; left: 70px; color:red; font-size: 2rem;"></h2>
+                        <p v-if="isPdfSelected" style="position: absolute; top: 35px; left: 70px; color:red; font-size: 2rem;"></p>
                     </div>
                     <div class="downloadLinkContainer">
                         <a v-if="pdfInfo.src" class="downloadLink" :href="pdfInfo.src" target="_blank">
                             <img style="width: 100%" src="../assets/download.svg" alt="download icon" />
-                            <p style="color: #fff; margin: 0">Download</p>
+                            <p style="margin: 0; color: #323232;">Download</p>
                         </a>
                     </div>
-                    <div class="controller" style="display: flex; justify-content: space-between; align-items: center;">
-                        <input v-model.number="pdfInfo.page" style="font-size: 2rem; width: 3rem; text-align: center; border-radius: 5px; background: transparent; color: #fff">
-                        <h4 style="margin: 0 17px 0 2px; font-size: 1.8rem; color: #fff;">/ {{pdfInfo.numPages}}</h4>
-                        <button @click="prevPage" style="margin-right: 10px; background-color: crimson; cursor: pointer;color: #fff; font-size: 1.8rem;">&#x25c1;</button>
-                        <button @click="nextPage" style="background-color: royalblue; cursor: pointer;color: #fff; font-size: 1.8rem;">&#x25b7;</button>
+                    <div v-show="isPdfSelected" class="controller" style="display: flex; justify-content: space-between; align-items: center;">
+                        <input v-model.number="pdfInfo.page" style="font-size: 2rem; width: 3rem; text-align: center; border-radius: 5px; background: transparent;">
+                        <h4 style="margin: 0 17px 0 2px; font-size: 1.8rem;">/ {{pdfInfo.numPages}}</h4>
+                        <button @click="prevPage" style="margin-right: 10px; background-color: transparent; cursor: pointer; font-size: 1.8rem;">&#x25c1;</button>
+                        <button @click="nextPage" style="background-color: transparent; cursor: pointer; font-size: 1.8rem;">&#x25b7;</button>
                     </div>
-                    <button @click="$modal.hide('moreInfo')" style="cursor: pointer; font-size: 1.9rem; background: transparent; color: #fff; border: none;">&#x2716;</button>
+                    <button @click="$modal.hide('moreInfo')" style="cursor: pointer; font-size: 1.9rem; background: transparent; border: none;">&#x2716;</button>
                 </div>
                 <div v-if="pdfInfo.loadedRatio > 0 && pdfInfo.loadedRatio < 1" style="background-color: royalblue; color: white; text-align: center" :style="{ width: pdfInfo.loadedRatio * 100 + '%' }">{{ Math.floor(pdfInfo.loadedRatio * 100) }}%</div>
-                <pdf v-if="pdfInfo.show" ref="pdf" class="pdfContainer" :src="pdfInfo.src" :page="pdfInfo.page" @progress="pdfInfo.loadedRatio = $event" @error="error" @num-pages="pdfInfo.numPages = $event" @link-clicked="pdfInfo.page = $event"></pdf>
+                <div v-if="!isPdfSelected" class="catalogueListContainer" style="position: absolute; left: 7%; top: 20%; z-index: 10;">
+                    <div v-if="!!selectedItem" style="margin-bottom: 4rem;">
+                        <h2>{{selectedItem.product}}</h2>
+                        <p ><b>Company:</b> {{selectedItem.company}}</p>
+                        <p v-if="selectedItem.established"><b>Established Year:</b> {{selectedItem.established}}</p>
+                        <a :href="selectedItem.website" target="_blank"><b>{{selectedItem.website}}</b></a>
+                    </div>
+                    <h4 style="">Product Introduction Document(s)</h4>
+                    <p v-if="!pdfInfo.catalogueUrls[0]" style="">Sorry! <br/>There isn't an additional document for this product.</p>
+                    <p v-for="(item, index) in pdfInfo.catalogueUrls" :key="index" class="pdfFileNames" @click="selectPdf(item)">{{(index+1) + ". " +item.split('kotra/')[1].split('/')[1]}}</p>
+                </div>
+                <div style="overflow-x: hidden">
+                    <pdf v-if="pdfInfo.show" :id="pdfInfo.page" ref="pdf" class="pdfContainer" :src="pdfInfo.src" :page="pdfInfo.page" @progress="pdfInfo.loadedRatio = $event" @error="error" @num-pages="pdfInfo.numPages = $event" @link-clicked="pdfInfo.page = $event"></pdf>
+                    <!--<pdf 
+                         v-for="i in pdfInfo.numPages"
+                         v-if="pdfInfo.show"
+                         @progress="pdfInfo.loadedRatio = $event"
+                         :key="i"
+                         :src="pdfInfo.src"
+                         :page="i"
+                         style=""
+                         class="pdfContainer"
+                         >
+                    </pdf>-->
+                </div>
             </div>
         </modal>
     </div>
@@ -87,12 +97,13 @@
 <script>
     import ListItem from "./ListItem";
     import pdf from 'vue-pdf'
-    
 
     export default {
         name: 'Home',
         data() {
             return {
+                selItem: "",
+                earlierPositionBeforeModalOpened: 0,
                 pdfInfo: {
                     src: '',
                     show: false,
@@ -100,7 +111,6 @@
                     loadedRatio: 0,
                     page: 1,
                     numPages: 0,
-                    isPdfSelected: false
                 },
                 title: `Korean Company Offerings`,
                 selectedCategories: [],
@@ -108,7 +118,7 @@
                 allCategories: [
                     { name: "Home", color: "#093145" },
                     { name: "Technology", color: "#107896" },
-                    { name: "Industry", color: "#2478DD" },
+                    { name: "Hardware", color: "#2478DD" },
                     { name: "Food", color: "#829356" },
                     { name: "Construction", color: "#AD2A1A" },
                     { name: "Cosmetic", color: "#C2571A" },
@@ -122,27 +132,68 @@
         },
         mounted() {
             //this.$modal.show('category selection')
-            //this.pdfInfo.src.promise.then(pdf => {
-            //    this.pdfInfo.numPages = pdf.numPages;
-            //});
             window.onhashchange = () => {
                 if (!window.location.hash) {
                     this.$modal.hide('moreInfo')
                 }
             }
-
+        },
+        computed: {
+            isPdfSelected() {
+                return this.pdfInfo.src
+            },
+            selectedItem() {
+                return this.selItem
+            }
         },
         methods: {
-            onCatalogueChange(event) {
-                document.getElementById("catalogueSelectorContainer").style.transform = "unset"
-                this.pdfInfo.page = 1
-                this.pdfInfo.isPdfSelected = !!event.target.selectedIndex
-                this.pdfInfo.src = event.target.value
+            selectPdf(item) {
+                var self = this
+                this.pdfInfo.src = item
+                pdf.createLoadingTask(item).promise.then(pdf => {
+                    this.pdfInfo.numPages = pdf.numPages;
+                    document.querySelector(".vm--modal").onmousewheel = function () {
+                        changePage()
+                    }
+                    function changePage() {
+                        const scrollingContainer = document.getElementById('scrollingElement')
+                        const pageBottom = scrollingContainer.scrollHeight
+                        const scrollBottom = scrollingContainer.clientHeight + scrollingContainer.scrollTop
+                        
+                        if (self.pdfInfo.page < pdf.numPages && scrollBottom >= pageBottom && detectMouseWheelDirection() == "down") {
+                            self.pdfInfo.page++
+                            scrollingContainer.scrollTop = 0
+                        } else if (self.pdfInfo.page > 1 && scrollingContainer.scrollTop <= 0 && detectMouseWheelDirection() == "up") {
+                            self.pdfInfo.page--
+                            scrollingContainer.scrollTop = pageBottom - scrollingContainer.clientHeight
+                        }
+                    }
+                    function detectMouseWheelDirection(e) {
+                        var delta = null,
+                            direction = false
+                            ;
+                        if (!e) { // if the event is not provided, we get it from the window object
+                            e = window.event;
+                        }
+                        if (e.wheelDelta) { // will work in most cases
+                            delta = e.wheelDelta / 60;
+                        } else if (e.detail) { // fallback for Firefox
+                            delta = -e.detail / 2;
+                        }
+                        if (delta !== null) {
+                            direction = delta > 0 ? 'up' : 'down';
+                        }
+
+                        return direction;
+                    }
+                })
+         
             },
-            openCatalogueSelection() {
-                this.listItems = []
-                this.$modal.show('category selection')
-                this.title = ""
+            onCatalogueChange(event) {
+                //document.getElementById("catalogueSelectorContainer").style.transform = "unset"
+                this.pdfInfo.page = 1
+                //this.pdfInfo.isPdfSelected = !!event.target.selectedIndex
+                this.pdfInfo.src = event.target.value
             },
             openProfile() {
                 this.$modal.show('profile')
@@ -160,6 +211,7 @@
                 if (window.location.hash) {
                     window.location.hash = ''
                 }
+                window.scrollTo(0, this.earlierPositionBeforeModalOpened)
             },
             prevPage() {
                 if (this.pdfInfo.page > 1) this.pdfInfo.page--
@@ -169,8 +221,11 @@
                 if (this.pdfInfo.page < this.pdfInfo.numPages) this.pdfInfo.page++
                 document.querySelector(".pdfContainer").scrollTop = 0;
             },
-            openPdf(catalogueUrls) {
-                this.pdfInfo.catalogueUrls = catalogueUrls
+            openPdf(selectedItem) {
+                this.selItem = selectedItem
+                this.earlierPositionBeforeModalOpened = window.pageYOffset
+                this.pdfInfo.catalogueUrls = selectedItem.catalogueUrls
+                
                 this.pdfInfo.show = true
                 this.$modal.show('moreInfo')
                 document.getElementsByTagName("body")[0].style.overflow = "hidden"
@@ -221,19 +276,24 @@
             btnSelect(event) {
                 const target = event.currentTarget
                 const targetText = target.innerText
-            
+                const previouslySelected = document.querySelector(".selected")
+
                 if (target.classList.contains("selected")) {
-                    target.classList.remove("selected")
-                    this.selectedCategories = this.selectedCategories.filter(el => el != targetText)
+                    //target.classList.remove("selected")
+                    //this.selectedCategories = this.selectedCategories.filter(el => el != targetText)
                 } else {
                     target.classList.add("selected")
+                    if(previouslySelected) previouslySelected.classList.remove("selected")
+                    this.selectedCategories = []
                     this.selectedCategories.push(targetText)
                 }
+                this.confirm()
             }
         },
         components: {
             ListItem, pdf
         },
+    
         created() {
             
         }
@@ -242,6 +302,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+    
     .navbar {
         display: flex;
         align-items: center;
@@ -345,14 +406,14 @@
         border-radius: 10px;
         margin: 0 5px;
     }
-    .categoryBtnContainer:hover, .profileBtnContainer:hover {
+    .profileBtnContainer:hover {
         background-color: #cdfcf9;
         color: #fff;
     }
-    #catalogueSelectorContainer {
+    /*#catalogueSelectorContainer {
         transform: translate(20vw, 40vh) scale(1.5); 
         transition: transform 1s ease-out;
-    }
+    }*/
 
     .pdfTools {
         width: 70%;
@@ -360,11 +421,12 @@
         z-index: 1;
         align-items: center;
         position: fixed;
-        justify-content: space-around;
+        justify-content: space-between;
         display: flex;
     }
     .vm--overlay {
-        background: rgba(0, 0, 0, 0.9) !important;
+        /*background: rgba(0, 0, 0, 0.9) !important;*/
+        background: rgba(255,255,255,1) !important;
     }
     .vm--overlay[data-modal="profile"] {
         background: rgba(0, 0, 0, 0) !important;
@@ -402,20 +464,33 @@
         background-color: transparent;
         margin-top: 5rem;
     }
+    #scrollingElement {
+        padding-right: 33px;
+        box-sizing: content-box;
+        margin-left: auto;
+    }
+
     .catalogueSelector {
         width: 15em;
         height: 2.4rem;
         font-size: 1.2rem;
-        background: transparent;
-        border: 2px solid #fff;
+        background: #fff;
+        border: 2px solid;
         border-radius: 5px;
         padding: 0 5px;
-        color: #fff;
+        color: #323232;
     }
     option {
         color: #000;
     }
 
+    .pdfFileNames {
+        cursor: pointer;
+        color: #323232;
+    }
+    .pdfFileNames:hover {
+        text-decoration:underline;
+    }
     /*responsive*/
     @media (max-width: 600px){
         .home {
@@ -463,6 +538,7 @@
         .controller {
             position: absolute;
             top: 86vh;
+            left: 23%;
         }
         .vm--modal {
             width: 100% !important;
@@ -478,10 +554,10 @@
             color: #000 !important;
             background-color: transparent !important;
         }
-        #catalogueSelectorContainer {
+        /*#catalogueSelectorContainer {
             transform: translate(20vw, 40vh) scale(1.3);
             transition: transform 1s ease-out;
-        }
+        }*/
     }
 </style>
 
