@@ -418,7 +418,10 @@
     "categories": [ "Clothing" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/asiha/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/asiha/Introduction.pdf" ],
+    "catalogueUrls": [
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/asiha/Introduction.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/asiha/PLAYP_Catalogue.pdf"
+    ],
     "hsCode": "620293",
     "website": "http://www.asiha.co.kr"
   },
@@ -629,7 +632,7 @@
     "product": "Hand Warmer",
     "productDescription": "",
     "categories": [ "Home" ],
-    "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/hbf/1.jpg",
+    "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/hbf/2.jpg",
     "productImageUrls": [],
     "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/hbf/Introduction.pdf" ],
     "hsCode": "382490",

@@ -71,9 +71,9 @@
                         <p v-if="selectedItem.established"><b>Established Year:</b> {{selectedItem.established}}</p>
                         <a :href="selectedItem.website" target="_blank"><b>{{selectedItem.website}}</b></a>
                     </div>
-                    <h4 style="">Product Introduction Document(s)</h4>
-                    <p v-if="!pdfInfo.catalogueUrls[0]" style="">Sorry! <br/>There isn't an additional document for this product.</p>
-                    <p v-for="(item, index) in pdfInfo.catalogueUrls" :key="index" class="pdfFileNames" @click="selectPdf(item)">{{(index+1) + ". " +item.split('kotra/')[1].split('/')[1]}}</p>
+                    <h2 style="">Product Introduction Document(s)</h2>
+                    <h4 v-if="!pdfInfo.catalogueUrls[0]" style="">Sorry! <br/>There isn't an additional document for this product.</h4>
+                    <h4 v-for="(item, index) in pdfInfo.catalogueUrls" :key="index" class="pdfFileNames" @click="selectPdf(item)">{{(index+1) + ". " +item.split('kotra/')[1].split('/')[1]}}</h4>
                 </div>
                 <div style="overflow-x: hidden">
                     <pdf v-if="pdfInfo.show" :id="pdfInfo.page" ref="pdf" class="pdfContainer" :src="pdfInfo.src" :page="pdfInfo.page" @progress="pdfInfo.loadedRatio = $event" @error="error" @num-pages="pdfInfo.numPages = $event" @link-clicked="pdfInfo.page = $event"></pdf>
