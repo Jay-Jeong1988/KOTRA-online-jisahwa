@@ -690,7 +690,11 @@
     "categories": [ "Home", "Food" ],
     "thumbnailUrl": "https://ik.imagekit.io/kitkitkitit/portfolio/tr:w-800,h-800/kotra/themade/1.jpg",
     "productImageUrls": [],
-    "catalogueUrls": [ "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/themade/Nutritive_Pet_Food.pdf" ],
+    "catalogueUrls": [
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/themade/Nutritive_Pet_Food.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/themade/PEBBLE_Air_Refreshner.pdf",
+      "https://s3-us-west-2.amazonaws.com/jayjeong.xyz/portfolio/kotra/themade/PEBBLE_Air_Refreshner(KR).pdf"
+    ],
     "hsCode": "330790",
     "website": "http://www.themadekorea.com"
   },
